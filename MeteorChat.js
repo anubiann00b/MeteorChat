@@ -1,4 +1,7 @@
 if (Meteor.isClient) {
+  Accounts.ui.config({
+    passwordSignupFields: 'USERNAME_ONLY'
+  });
   Template.hello.greeting = function () {
     return "Welcome to MeteorChat.";
   };
